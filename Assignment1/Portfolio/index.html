@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("button").on("click", function(event) {
+            var hash = $(this).attr("data-target"),
+            target = $("#" + hash);
+
+            event.preventDefault();
+            $("html, body").animate({
+                scrollTop: $(target).offset().top
+            },
+            800,
+            function() {
+                window.location.hash = hash;
+            }
+            );
+        });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="title.png" type="image">
+    <title>Vishavjeet Portfolio</title>
+</head>
+<body>
+    <div id="div1" class="intro">
+        <p>
+            Hello, my name is 
+                <span class="nowrap">Vishavjeet Singh</span><br>
+            I am a Developer
+        </p>
+        <br>
+        <button class="button" data-target="div2">Know More</button>
+        <!-- <input class="button" type="button" id="button1" value="Know More"> -->
+    </div>
+    <div id="div2" class="aboutme">
+        <p>ABOUT ME</p>
+        <div class="column">
+            <img id="photo" src="profile.jpg" >
+        </div>
+        <div class="column">
+            <p id="info">
+                I am a 4th year Computer Science Engineering student
+                currently working in Nagarro Software Company Gurgaon
+                My dream is to build something which can be used by millions
+            </p>
+            <input type="button" class="button" onclick=" window.open('https://drive.google.com/file/d/1wEicdEltZ0xgbA847x0q6ZJUPCYHzgZw/view','_blank')" id="resumebtn" value="Resume">
+        </div>   
+    </div>
+    <div id="div3" class="education">
+        <p>Education</p>
+        <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Class</th>
+                <th>School/University</th>
+                <th>CGPA/Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2016-20</td>
+                <td>B.Tech CSE</td>
+                <td>Guru Nanak Dev University</td>
+                <td>9.29</td>
+              </tr>
+               <tr>
+                <td>2016</td>
+                <td>Class XII</td>
+                <td>G.S.S.S Barnada</td>
+                <td>91.8%</td>
+              </tr>
+               <tr>
+                <td>2014</td>
+                <td>Class X</td>
+                <td>Modern Sandeepni School</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <button class="button" data-target="div4">Let's Connect</button>
+    </div>
+    <div id="div4" class="contact">
+        <div id="top">
+            <p id="conhead"> CONTACT</p>
+            <p id="con">
+                Would you like to work with me? Awesome!
+            </p>
+            <button class="button" id= "mailbtn" onclick="location.href='mailto:vishavjeetsinghthakur@email.com';">Mail Me</button>
+        </div>
+        <div id="bottom">
+            <br>
+            <button id="bt" class="button" data-target="div1"><i class="icon-chevron-up"></i></button>
+            <br>
+            <br>
+            <a href="https://www.linkedin.com/in/vishavjeets/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/vishavjeet_vt/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://github.com/Vishavjeet6/" target="_blank" class="fa fa-github"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMS</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Calculate RMS</h1>
+    <div class="container">
+        <table cellpadding="10" cellspacing="10">
+            <tr>
+                <td>
+                    <input id="vals" placeholder="Enter values here, seperated by comma" required>
+                </td>
+                <td>
+                    <button id="calculate" onclick="rms()">Calculate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    p<sub>RMS</sub>
+                </td>
+                <td>
+                    <span id="pRMS"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    n<sub>RMS</sub>
+                </td>
+                <td>
+                    <span id="nRMS"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    total<sub>RMS</sub>
+                </td>
+                <td>
+                    <span id="tRMS"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

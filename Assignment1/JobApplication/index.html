@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input[type="file"] {
+        margin-left: 10px;
+        border: 1px solid #b5bcc7;
+        width: 220px;
+        vertical-align: middle;
+        margin-bottom: 5px;
+        direction: rtl;
+        }
+        input[type="file"]::-webkit-file-upload-button {
+        background: #7c82a1;
+        color: #FFFFFF;
+        line-height: 20px;
+        padding: 10px 10px;
+        border: none;
+        float: right;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Job Application
+    </title>
+</head>
+<body>
+    <h1 style="text-align: center;">Job Application</h1>
+    <form action="#">
+    <div class="w3-container">
+        <h3>Personal Details</h3>
+        <table class="w3-table-all w3-centered">
+            <tr>
+                <td>
+                    First Name :
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter First Name" required>
+                </td>
+               
+            </tr>
+            <tr>
+                <td>
+                    Last Name :
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter Last Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+               
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email : 
+                </td>
+                <td>
+                    <input type="email" placeholder="Enter Email" required>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    Phone No :
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter Phone No" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date of Birth
+                </td>
+                <td>
+                    <input type="date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for "profile">Applying for :</label>
+                </td>
+                <td>
+                    <select id="profile">
+                        <option selected value="intern">Intern</option>
+                        <option value="sde1">SDE1</option>
+                        <option value="sde2">SDE2</option>
+                        <option value="sde3">SDE3</option>
+                    </select>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    Expected joining date
+                </td>
+                <td>
+                    <input type="date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address :
+                </td>
+                <td>
+                    <textarea id="subject" name="subject" placeholder="Enter Address" style="height:100px"></textarea>
+                    <!-- <input type="text" placeholder="Enter Address" required> -->
+                </td>
+            </tr>
+        </table>
+        <h3>Education Details</h3>
+        <table class="w3-table-all w3-centered">
+            <tr>
+                <td>
+                    <label for "degree">Highest Qualification :</label>
+                </td>
+                <td>
+                    <select id="degree">
+                        <option  value="grad">Graduate</option>
+                        <option selected value="post">Post Graduate</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Marks Obtained :
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter CGPA" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total Experience :
+                </td>
+                <td> 
+                    <input type="number" placeholder="Enter 0 if no experience" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Resume :
+                </td>
+                <td>
+                   <input type="file"  required>
+                </td>
+            </tr>
+        </table>
+    <br><br>
+    <center>
+        <input type="submit" value="Submit">
+    </center>
+    
+    </div>
+    </form>
+</body>
+</html>

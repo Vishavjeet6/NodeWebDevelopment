@@ -1,0 +1,209 @@
+@import "compass/css3";
+
+.intro{
+    font-size: 40px;
+    font-weight: 900;
+    color: black;
+    font-family: monospace;
+    display: flex;
+    /* height: 80vh; */
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nowrap{
+    color: rgb(49, 179, 172);
+    white-space: nowrap;
+}
+
+.button {
+    background-color: white;
+    color: rgb(49, 179, 172);
+    border: 2px solid rgb(49, 179, 172);
+    padding: 15px 32px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+.button:hover {
+    color:white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(49, 179, 172);
+  }
+
+
+.aboutme{  
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    height:100%;
+    background-color: rgb(49, 179, 172);
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+  
+#photo{
+    height: 300px;
+    width: 400px;
+}
+
+#info{
+    padding-top: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;;
+}
+
+#resumebtn.button{
+    background-color: rgb(49, 179, 172);
+    color: white;
+    padding: 5px 32px;
+    margin-bottom: 50px;;
+    border: 2px solid white;
+}
+
+#resumebtn.button:hover {
+    color:rgb(49, 179, 172);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: white;
+  }
+
+.education{
+    font-size: 40px;
+    font-weight: 900;
+    color: black;
+    font-family: monospace;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table{
+    font-size: 35px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd){background-color: #f2f2f2}
+  
+  th {
+      text-align: center;
+    background-color: rgb(49, 179, 172);
+    color: white;
+  }
+
+.contact{
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    height:100%;
+    font-family: monospace;
+    display: block;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+
+#top {
+    height: 50%;
+    background-color: rgb(49, 179, 172);;
+}
+
+#bottom {
+    height: 50%;
+    background-color: rgb(44, 37, 37);
+}
+
+#conhead{
+    padding-top: 20px;
+}
+
+#con{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#mailbtn.button{
+    background-color: rgb(49, 179, 172);
+    color: white;
+    margin-bottom: 50px;;
+    border: 2px solid white;
+}
+
+#mailbtn.button:hover {
+    color:rgb(49, 179, 172);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: white;
+}
+
+#bt{
+    color:white;
+    background-color: rgb(49, 179, 172);
+    border-radius: 30%;
+    border: none;
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  
+  .fa-linkedin {
+    background: #00aff0;
+    color: white;
+  }
+  
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+    
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+
+  .fa-github {
+    background: #125688;
+    color: white;
+  }
+
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
